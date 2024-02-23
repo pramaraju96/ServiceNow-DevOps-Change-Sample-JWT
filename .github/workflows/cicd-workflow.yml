@@ -200,7 +200,7 @@ jobs:
           deployment-gate: '{"environment":"prod","jobName":"Deploy"}'
         
   deploy:
-    name: Deploy
+    name: 'Deploy'
     needs: change
     runs-on: ubuntu-latest
     environment: prod
