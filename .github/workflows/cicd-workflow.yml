@@ -324,9 +324,6 @@ jobs:
     name: Build sample poc
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: echo Completed Build!
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v3.1.0
         with:
