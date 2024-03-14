@@ -324,7 +324,7 @@ jobs:
     name: Build sample poc
     runs-on: ubuntu-latest
     steps:
-      - name: ServiceNow Change
+      - name: ServiceNow DevOps Change Attributes
         uses: ServiceNow/servicenow-devops-change@v3.1.0
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
