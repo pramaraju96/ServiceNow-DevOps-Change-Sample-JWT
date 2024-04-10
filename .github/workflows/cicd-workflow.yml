@@ -124,7 +124,7 @@ jobs:
   ServiceNowSecurityScanResultsVeracode:
     # type of machine to run the job on
     runs-on: ubuntu-latest
-    name: ServiceNow Security Scan Results
+    name: ServiceNow Security Scan Results Veracode
     needs: sonarScan
     steps:
       - name: ServiceNow DevOps Security Results
@@ -141,7 +141,7 @@ jobs:
             # GitHub Context
             context-github: ${{ toJSON(github) }}
             # Display Name of the Job
-            job-name: 'ServiceNow Security Scan Results'
+            job-name: 'ServiceNow Security Scan Results Veracode'
             security-result-attributes: '{"scanner": "Veracode", "applicationName": "10kflaws-72"}'
             # scanner: Scanning tool and is required e.g. Veracode.
             # applicationName: Name of your Veracode application and is required. This attribute is applicable only for Veracode.
@@ -151,7 +151,7 @@ jobs:
   ServiceNowSecurityScanResultsCheckmarxSAST:
     # type of machine to run the job on
     runs-on: ubuntu-latest
-    name: ServiceNow Security Scan Results
+    name: ServiceNow Security Scan Results CxSAST
     needs: sonarScan
     steps:
       - name: ServiceNow DevOps Security Results
@@ -168,7 +168,7 @@ jobs:
             # GitHub Context
             context-github: ${{ toJSON(github) }}
             # Display Name of the Job
-            job-name: 'ServiceNow Security Scan Results'
+            job-name: 'ServiceNow Security Scan Results CxSAST'
             security-result-attributes: '{"scanner": "Checkmarx SAST", "projectId": "1094", "securityToolId": "e90eb2bb4715861056978bb4236d437f"}'
 
 
