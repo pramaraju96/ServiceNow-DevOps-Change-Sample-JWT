@@ -169,7 +169,7 @@ jobs:
             context-github: ${{ toJSON(github) }}
             # Display Name of the Job
             job-name: 'ServiceNow Security Scan Results CxSAST'
-            security-result-attributes: '{"scanner": "Checkmarx SAST", "projectId": "1094", "securityToolId": "e90eb2bb4715861056978bb4236d437f"}'
+            security-result-attributes: '{"scanner": "Checkmarx SAST", "projectId": "3285", "securityToolId": "632ff27387d10610597bca26cebb3576"}'
 
 
   registerPackage:
