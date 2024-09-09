@@ -2,9 +2,9 @@
 
 name: CICD GitHub workflow - JWT authentication
 on: 
-  # workflow_dispatch
-  push:
-    branches: [ "main" ]
+  workflow_dispatch
+  # push:
+  #   branches: [ "main" ]
   # pull_request:
   #   branches: [ "main" ]
   #   types: [opened, synchronize, reopened]
