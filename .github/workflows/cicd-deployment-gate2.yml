@@ -3,6 +3,7 @@
 name: GitHub CICD workflow with Deployment Gates using JWT
 
 #C1
+#C2
 
 on:
   pull_request:
